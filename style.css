@@ -1,0 +1,86 @@
+/* General body styles */
+body {
+    background: #042e4b; /* Dark blue background */
+    color: #fff; /* White text */
+    font: 19px/1.5 'Fira Sans Extra Condensed', Helvetica, Helvetica Neue, Arial;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset some default styles */
+body, figure, image {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sky background */
+.intro {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/579121/sky-backr2.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+
+/* Tulips container */
+.tulips {
+    bottom: -10px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Tulip specific styles */
+.tulip {
+    position: absolute;
+    bottom: 20px;
+    width: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Flower styles */
+.flower, .leftleaf, .rightleaf {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.flower {
+    background-color: red;
+}
+
+.leftleaf {
+    position: relative;
+    top: -10px;
+    background-color: darkgreen;
+}
+
+.rightleaf {
+    position: relative;
+    top: -10px;
+    background-color: darkgreen;
+}
+
+/* Hidden stem styles for animation */
+.stemEnd1, .stemEnd2, .stemEnd3, .stemEnd4 {
+    visibility: hidden;
+}
+
+/* Shooting stars styling */
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+}
